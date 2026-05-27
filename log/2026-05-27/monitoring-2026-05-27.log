@@ -1,0 +1,1371 @@
+2026-05-27 16:24:15 INFO  --- [main] Starting InspienDevApplication using Java 17.0.18 with PID 16244 (C:\developer\inspienDev\inspienDev\build\classes\java\main started by hwcot in C:\developer\inspienDev\inspienDev)
+2026-05-27 16:24:15 INFO  --- [main] No active profile set, falling back to 1 default profile: "default"
+2026-05-27 16:24:16 INFO  --- [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 16:24:16 INFO  --- [main] Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2026-05-27 16:24:17 INFO  --- [main] Tomcat initialized with port 8080 (http)
+2026-05-27 16:24:17 INFO  --- [main] Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-27 16:24:17 INFO  --- [main] Starting service [Tomcat]
+2026-05-27 16:24:17 INFO  --- [main] Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-27 16:24:17 INFO  --- [main] Initializing Spring embedded WebApplicationContext
+2026-05-27 16:24:17 INFO  --- [main] Root WebApplicationContext: initialization completed in 1197 ms
+2026-05-27 16:24:17 INFO  --- [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-27 16:24:17 INFO  --- [main] HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-27 16:24:17 INFO  --- [main] HHH000026: Second-level cache disabled
+2026-05-27 16:24:17 INFO  --- [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 16:24:17 INFO  --- [main] HikariPool-Core - Starting...
+2026-05-27 16:24:18 INFO  --- [main] HikariPool-Core - Added connection oracle.jdbc.driver.T4CConnection@3620eab
+2026-05-27 16:24:18 INFO  --- [main] HikariPool-Core - Start completed.
+2026-05-27 16:24:18 WARN  --- [main] HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 16:24:18 INFO  --- [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-Core)']
+	Database driver: undefined/unknown
+	Database version: 19.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 16:24:19 INFO  --- [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 16:24:19 INFO  --- [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 16:24:19 WARN  --- [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 16:24:20 INFO  --- [main] Starting ProtocolHandler ["http-nio-8080"]
+2026-05-27 16:24:20 INFO  --- [main] Tomcat started on port 8080 (http) with context path '/'
+2026-05-27 16:24:20 INFO  --- [main] Started InspienDevApplication in 4.778 seconds (process running for 5.324)
+2026-05-27 16:24:20 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:24:20 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 149ms
+2026-05-27 16:25:10 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:25:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 12ms
+2026-05-27 16:25:56 INFO  --- [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-27 16:25:56 INFO  --- [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2026-05-27 16:25:56 INFO  --- [http-nio-8080-exec-2] Completed initialization in 0 ms
+2026-05-27 16:25:56 INFO  --- [http-nio-8080-exec-2] [EAI SENDER] 실시간 주문 XML 수신 요청 감지
+2026-05-27 16:25:56 INFO  --- [http-nio-8080-exec-2] [EAI SERVICE] 비즈니스 파이프라인 정제 엔진 구동
+2026-05-27 16:25:56 INFO  --- [http-nio-8080-exec-2] [SUCCESS] 작업명: CONVERT_XML | 소요시간: 95ms
+2026-05-27 16:25:57 INFO  --- [http-nio-8080-exec-2] [JPA Target] Oracle ORDER_TB 데이터 대량 일괄 배치 적재 완료
+2026-05-27 16:25:57 INFO  --- [http-nio-8080-exec-2] [SUCCESS] 작업명: ORDER_SAVE | 소요시간: 539ms
+2026-05-27 16:25:59 INFO  --- [http-nio-8080-exec-2] [SUCCESS] 작업명: SEND_FILE | 소요시간: 2338ms
+2026-05-27 16:25:59 INFO  --- [http-nio-8080-exec-2] [EAI SENDER] 주문 연계 라이프사이클 전원 성공
+2026-05-27 16:26:00 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: R718
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 24ms
+2026-05-27 16:26:00 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: W502
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 12ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 22ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 21ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 16:26:00 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 25ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 16:26:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 16:26:02 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 16:26:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 16:26:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 16:26:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 16:26:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 16:26:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 16:26:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 2924ms
+2026-05-27 16:26:53 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:26:53 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 16:27:43 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:27:43 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 16:28:33 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:28:33 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 9ms
+2026-05-27 16:29:23 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:29:23 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 9ms
+2026-05-27 16:30:13 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:30:13 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 16:31:03 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:31:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 9ms
+2026-05-27 16:31:53 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:31:53 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 9ms
+2026-05-27 16:32:43 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:32:43 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 8ms
+2026-05-27 16:33:33 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:33:33 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 9ms
+2026-05-27 16:34:23 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:34:23 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 16:35:13 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:35:13 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 16:36:03 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:36:03 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 23ms
+2026-05-27 16:36:53 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 16:36:53 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 9ms
+2026-05-27 16:37:36 INFO  --- [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-27 16:37:36 INFO  --- [tomcat-shutdown] Graceful shutdown complete
+2026-05-27 16:37:36 INFO  --- [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 16:37:36 INFO  --- [SpringApplicationShutdownHook] HikariPool-Core - Shutdown initiated...
+2026-05-27 16:37:36 INFO  --- [SpringApplicationShutdownHook] HikariPool-Core - Shutdown completed.
+2026-05-27 17:13:53 INFO  --- [main] Starting InspienDevApplication using Java 17.0.18 with PID 11304 (C:\developer\inspienDev\inspienDev\build\classes\java\main started by hwcot in C:\developer\inspienDev\inspienDev)
+2026-05-27 17:13:53 INFO  --- [main] No active profile set, falling back to 1 default profile: "default"
+2026-05-27 17:13:53 INFO  --- [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 17:13:53 INFO  --- [main] Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2026-05-27 17:13:54 INFO  --- [main] Tomcat initialized with port 8080 (http)
+2026-05-27 17:13:54 INFO  --- [main] Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-27 17:13:54 INFO  --- [main] Starting service [Tomcat]
+2026-05-27 17:13:54 INFO  --- [main] Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-27 17:13:54 INFO  --- [main] Initializing Spring embedded WebApplicationContext
+2026-05-27 17:13:54 INFO  --- [main] Root WebApplicationContext: initialization completed in 1015 ms
+2026-05-27 17:13:54 INFO  --- [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-27 17:13:54 INFO  --- [main] HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-27 17:13:54 INFO  --- [main] HHH000026: Second-level cache disabled
+2026-05-27 17:13:54 INFO  --- [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 17:13:54 INFO  --- [main] HikariPool-Core - Starting...
+2026-05-27 17:13:55 INFO  --- [main] HikariPool-Core - Added connection oracle.jdbc.driver.T4CConnection@8ef1d58
+2026-05-27 17:13:55 INFO  --- [main] HikariPool-Core - Start completed.
+2026-05-27 17:13:55 WARN  --- [main] HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 17:13:55 INFO  --- [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-Core)']
+	Database driver: undefined/unknown
+	Database version: 19.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 17:13:56 INFO  --- [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 17:13:56 INFO  --- [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 17:13:56 WARN  --- [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 17:13:57 INFO  --- [main] Starting ProtocolHandler ["http-nio-8080"]
+2026-05-27 17:13:57 INFO  --- [main] Tomcat started on port 8080 (http) with context path '/'
+2026-05-27 17:13:57 INFO  --- [main] Started InspienDevApplication in 4.263 seconds (process running for 4.774)
+2026-05-27 17:13:57 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:13:57 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:13:57 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 132ms
+2026-05-27 17:14:11 INFO  --- [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-27 17:14:11 INFO  --- [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2026-05-27 17:14:11 INFO  --- [http-nio-8080-exec-2] Completed initialization in 1 ms
+2026-05-27 17:14:11 INFO  --- [http-nio-8080-exec-2] [START] 작업명: ORDER_SAVE | 메서드: OrderService.orderSave(..)
+2026-05-27 17:14:11 INFO  --- [http-nio-8080-exec-2] [START] 작업명: CONVERT_XML | 메서드: OrderMapper.convertXmlToEntities(..)
+2026-05-27 17:14:12 INFO  --- [http-nio-8080-exec-2] [SUCCESS] 작업명: CONVERT_XML | 소요시간: 93ms
+2026-05-27 17:14:12 INFO  --- [http-nio-8080-exec-2] [SUCCESS] 작업명: ORDER_SAVE | 소요시간: 515ms
+2026-05-27 17:14:12 INFO  --- [http-nio-8080-exec-2] [START] 작업명: SEND_FILE | 메서드: AccountFtpService.sendFile(..)
+2026-05-27 17:14:26 WARN  --- [http-nio-8080-exec-2] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171412.txt | 시도횟수: 1/3 | 에러: Read timed out
+2026-05-27 17:14:32 WARN  --- [http-nio-8080-exec-2] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171412.txt | 시도횟수: 2/3 | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+2026-05-27 17:14:37 WARN  --- [http-nio-8080-exec-2] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171412.txt | 시도횟수: 3/3 | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+2026-05-27 17:14:37 ERROR --- [http-nio-8080-exec-2] [FTP_FAIL] 최종 전송 실패: INSPIEN_채현우_20260527171412.txt
+2026-05-27 17:14:37 ERROR --- [http-nio-8080-exec-2] [FAIL] 작업명: SEND_FILE | 소요시간: 24388ms | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+java.lang.Exception: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+	at com.eai.inspiendev.service.AccountFtpService.executeFtpTransfer(AccountFtpService.java:107)
+	at com.eai.inspiendev.service.AccountFtpService.sendToFtp(AccountFtpService.java:67)
+	at com.eai.inspiendev.service.AccountFtpService.sendFile(AccountFtpService.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.eai.inspiendev.global.log.MonitoringAspect.logExecution(MonitoringAspect.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.eai.inspiendev.service.AccountFtpService$$SpringCGLIB$$0.sendFile(<generated>)
+	at com.eai.inspiendev.api.OrderRestSenderController.receiveOrder(OrderRestSenderController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-27 17:14:37 ERROR --- [http-nio-8080-exec-2] [EAI SENDER] 시스템 연계 치명적 오류: 
+java.lang.Exception: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+	at com.eai.inspiendev.service.AccountFtpService.executeFtpTransfer(AccountFtpService.java:107)
+	at com.eai.inspiendev.service.AccountFtpService.sendToFtp(AccountFtpService.java:67)
+	at com.eai.inspiendev.service.AccountFtpService.sendFile(AccountFtpService.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.eai.inspiendev.global.log.MonitoringAspect.logExecution(MonitoringAspect.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.eai.inspiendev.service.AccountFtpService$$SpringCGLIB$$0.sendFile(<generated>)
+	at com.eai.inspiendev.api.OrderRestSenderController.receiveOrder(OrderRestSenderController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: N263
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 25ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 23ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 26ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:47 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 29ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 24ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:48 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 26ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 22ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:50 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: I861
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 11ms
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:50 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: K412
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 12ms
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:14:50 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: F400
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 13ms
+2026-05-27 17:14:50 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 2951ms
+2026-05-27 17:15:40 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:15:40 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:15:40 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 28ms
+2026-05-27 17:16:11 INFO  --- [http-nio-8080-exec-4] [START] 작업명: ORDER_SAVE | 메서드: OrderService.orderSave(..)
+2026-05-27 17:16:11 INFO  --- [http-nio-8080-exec-4] [START] 작업명: CONVERT_XML | 메서드: OrderMapper.convertXmlToEntities(..)
+2026-05-27 17:16:11 INFO  --- [http-nio-8080-exec-4] [SUCCESS] 작업명: CONVERT_XML | 소요시간: 4ms
+2026-05-27 17:16:11 INFO  --- [http-nio-8080-exec-4] [SUCCESS] 작업명: ORDER_SAVE | 소요시간: 387ms
+2026-05-27 17:16:12 INFO  --- [http-nio-8080-exec-4] [START] 작업명: SEND_FILE | 메서드: AccountFtpService.sendFile(..)
+2026-05-27 17:16:19 WARN  --- [http-nio-8080-exec-4] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171612.txt | 시도횟수: 1/3 | 에러: Read timed out
+2026-05-27 17:16:23 WARN  --- [http-nio-8080-exec-4] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171612.txt | 시도횟수: 2/3 | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+2026-05-27 17:16:28 WARN  --- [http-nio-8080-exec-4] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171612.txt | 시도횟수: 3/3 | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+2026-05-27 17:16:28 ERROR --- [http-nio-8080-exec-4] [FTP_FAIL] 최종 전송 실패: INSPIEN_채현우_20260527171612.txt
+2026-05-27 17:16:28 ERROR --- [http-nio-8080-exec-4] [FAIL] 작업명: SEND_FILE | 소요시간: 15996ms | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+java.lang.Exception: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+	at com.eai.inspiendev.service.AccountFtpService.executeFtpTransfer(AccountFtpService.java:107)
+	at com.eai.inspiendev.service.AccountFtpService.sendToFtp(AccountFtpService.java:67)
+	at com.eai.inspiendev.service.AccountFtpService.sendFile(AccountFtpService.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.eai.inspiendev.global.log.MonitoringAspect.logExecution(MonitoringAspect.java:23)
+	at jdk.internal.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.eai.inspiendev.service.AccountFtpService$$SpringCGLIB$$0.sendFile(<generated>)
+	at com.eai.inspiendev.api.OrderRestSenderController.receiveOrder(OrderRestSenderController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-27 17:16:28 ERROR --- [http-nio-8080-exec-4] [EAI SENDER] 시스템 연계 치명적 오류: 
+java.lang.Exception: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+	at com.eai.inspiendev.service.AccountFtpService.executeFtpTransfer(AccountFtpService.java:107)
+	at com.eai.inspiendev.service.AccountFtpService.sendToFtp(AccountFtpService.java:67)
+	at com.eai.inspiendev.service.AccountFtpService.sendFile(AccountFtpService.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.eai.inspiendev.global.log.MonitoringAspect.logExecution(MonitoringAspect.java:23)
+	at jdk.internal.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.eai.inspiendev.service.AccountFtpService$$SpringCGLIB$$0.sendFile(<generated>)
+	at com.eai.inspiendev.api.OrderRestSenderController.receiveOrder(OrderRestSenderController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: L664
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 11ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: R333
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 12ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: F261
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 10ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:30 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 24ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 14ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 25ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 14ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:32 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:16:33 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 2891ms
+2026-05-27 17:17:23 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:17:23 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:17:23 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 17:18:09 INFO  --- [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-27 17:18:09 INFO  --- [tomcat-shutdown] Graceful shutdown complete
+2026-05-27 17:18:09 INFO  --- [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 17:18:09 INFO  --- [SpringApplicationShutdownHook] HikariPool-Core - Shutdown initiated...
+2026-05-27 17:18:09 INFO  --- [SpringApplicationShutdownHook] HikariPool-Core - Shutdown completed.
+2026-05-27 17:18:12 INFO  --- [main] Starting InspienDevApplication using Java 17.0.18 with PID 11892 (C:\developer\inspienDev\inspienDev\build\classes\java\main started by hwcot in C:\developer\inspienDev\inspienDev)
+2026-05-27 17:18:12 INFO  --- [main] No active profile set, falling back to 1 default profile: "default"
+2026-05-27 17:18:13 INFO  --- [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 17:18:13 INFO  --- [main] Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2026-05-27 17:18:13 INFO  --- [main] Tomcat initialized with port 8080 (http)
+2026-05-27 17:18:13 INFO  --- [main] Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-27 17:18:13 INFO  --- [main] Starting service [Tomcat]
+2026-05-27 17:18:13 INFO  --- [main] Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-27 17:18:13 INFO  --- [main] Initializing Spring embedded WebApplicationContext
+2026-05-27 17:18:13 INFO  --- [main] Root WebApplicationContext: initialization completed in 1036 ms
+2026-05-27 17:18:13 INFO  --- [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-27 17:18:13 INFO  --- [main] HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-27 17:18:14 INFO  --- [main] HHH000026: Second-level cache disabled
+2026-05-27 17:18:14 INFO  --- [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 17:18:14 INFO  --- [main] HikariPool-Core - Starting...
+2026-05-27 17:18:14 INFO  --- [main] HikariPool-Core - Added connection oracle.jdbc.driver.T4CConnection@6b0325d0
+2026-05-27 17:18:14 INFO  --- [main] HikariPool-Core - Start completed.
+2026-05-27 17:18:14 WARN  --- [main] HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 17:18:14 INFO  --- [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-Core)']
+	Database driver: undefined/unknown
+	Database version: 19.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 17:18:15 INFO  --- [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 17:18:15 INFO  --- [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 17:18:16 WARN  --- [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 17:18:16 INFO  --- [main] Starting ProtocolHandler ["http-nio-8080"]
+2026-05-27 17:18:16 INFO  --- [main] Tomcat started on port 8080 (http) with context path '/'
+2026-05-27 17:18:16 INFO  --- [main] Started InspienDevApplication in 4.389 seconds (process running for 4.867)
+2026-05-27 17:18:16 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:18:16 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:18:16 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 128ms
+2026-05-27 17:18:22 INFO  --- [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-27 17:18:22 INFO  --- [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2026-05-27 17:18:22 INFO  --- [http-nio-8080-exec-2] Completed initialization in 0 ms
+2026-05-27 17:18:22 INFO  --- [http-nio-8080-exec-2] [START] 작업명: ORDER_SAVE | 메서드: OrderService.orderSave(..)
+2026-05-27 17:18:22 INFO  --- [http-nio-8080-exec-2] [START] 작업명: CONVERT_XML | 메서드: OrderMapper.convertXmlToEntities(..)
+2026-05-27 17:18:22 INFO  --- [http-nio-8080-exec-2] [SUCCESS] 작업명: CONVERT_XML | 소요시간: 85ms
+2026-05-27 17:18:22 INFO  --- [http-nio-8080-exec-2] [SUCCESS] 작업명: ORDER_SAVE | 소요시간: 606ms
+2026-05-27 17:18:23 INFO  --- [http-nio-8080-exec-2] [START] 작업명: SEND_FILE | 메서드: AccountFtpService.sendFile(..)
+2026-05-27 17:18:30 WARN  --- [http-nio-8080-exec-2] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171823.txt | 시도횟수: 1/3 | 에러: Read timed out
+2026-05-27 17:18:35 WARN  --- [http-nio-8080-exec-2] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171823.txt | 시도횟수: 2/3 | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+2026-05-27 17:18:39 WARN  --- [http-nio-8080-exec-2] [FTP_RETRY] 파일 전송 실패: INSPIEN_채현우_20260527171823.txt | 시도횟수: 3/3 | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+2026-05-27 17:18:39 ERROR --- [http-nio-8080-exec-2] [FTP_FAIL] 최종 전송 실패: INSPIEN_채현우_20260527171823.txt
+2026-05-27 17:18:39 ERROR --- [http-nio-8080-exec-2] [FAIL] 작업명: SEND_FILE | 소요시간: 16007ms | 에러: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+java.lang.Exception: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+	at com.eai.inspiendev.service.AccountFtpService.executeFtpTransfer(AccountFtpService.java:114)
+	at com.eai.inspiendev.service.AccountFtpService.sendToFtp(AccountFtpService.java:67)
+	at com.eai.inspiendev.service.AccountFtpService.sendFile(AccountFtpService.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.eai.inspiendev.global.log.MonitoringAspect.logExecution(MonitoringAspect.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.eai.inspiendev.service.AccountFtpService$$SpringCGLIB$$0.sendFile(<generated>)
+	at com.eai.inspiendev.api.OrderRestSenderController.receiveOrder(OrderRestSenderController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-27 17:18:39 ERROR --- [http-nio-8080-exec-2] [EAI SENDER] 시스템 연계 치명적 오류: 
+java.lang.Exception: 파일 업로드 명령 실패: 553 Can't open that file: Permission denied
+
+	at com.eai.inspiendev.service.AccountFtpService.executeFtpTransfer(AccountFtpService.java:114)
+	at com.eai.inspiendev.service.AccountFtpService.sendToFtp(AccountFtpService.java:67)
+	at com.eai.inspiendev.service.AccountFtpService.sendFile(AccountFtpService.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.eai.inspiendev.global.log.MonitoringAspect.logExecution(MonitoringAspect.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.eai.inspiendev.service.AccountFtpService$$SpringCGLIB$$0.sendFile(<generated>)
+	at com.eai.inspiendev.api.OrderRestSenderController.receiveOrder(OrderRestSenderController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:06 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: Y998
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 35ms
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:06 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: W958
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 11ms
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:06 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: S194
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 13ms
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:06 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: Q279
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 11ms
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 23ms
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:06 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 22ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 24ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 22ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:07 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 22ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 17:19:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 2994ms
+2026-05-27 17:19:59 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:19:59 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:19:59 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 63ms
+2026-05-27 17:20:49 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:20:49 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:20:49 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 11ms
+2026-05-27 17:21:11 INFO  --- [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-27 17:21:11 INFO  --- [tomcat-shutdown] Graceful shutdown complete
+2026-05-27 17:21:11 INFO  --- [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 17:21:11 INFO  --- [SpringApplicationShutdownHook] HikariPool-Core - Shutdown initiated...
+2026-05-27 17:21:11 INFO  --- [SpringApplicationShutdownHook] HikariPool-Core - Shutdown completed.
+2026-05-27 17:21:14 INFO  --- [main] Starting InspienDevApplication using Java 17.0.18 with PID 29496 (C:\developer\inspienDev\inspienDev\build\classes\java\main started by hwcot in C:\developer\inspienDev\inspienDev)
+2026-05-27 17:21:14 INFO  --- [main] No active profile set, falling back to 1 default profile: "default"
+2026-05-27 17:21:14 INFO  --- [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-27 17:21:14 INFO  --- [main] Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2026-05-27 17:21:15 INFO  --- [main] Tomcat initialized with port 8080 (http)
+2026-05-27 17:21:15 INFO  --- [main] Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-27 17:21:15 INFO  --- [main] Starting service [Tomcat]
+2026-05-27 17:21:15 INFO  --- [main] Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-27 17:21:15 INFO  --- [main] Initializing Spring embedded WebApplicationContext
+2026-05-27 17:21:15 INFO  --- [main] Root WebApplicationContext: initialization completed in 1050 ms
+2026-05-27 17:21:15 INFO  --- [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-27 17:21:15 INFO  --- [main] HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-05-27 17:21:15 INFO  --- [main] HHH000026: Second-level cache disabled
+2026-05-27 17:21:15 INFO  --- [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-27 17:21:15 INFO  --- [main] HikariPool-Core - Starting...
+2026-05-27 17:21:16 INFO  --- [main] HikariPool-Core - Added connection oracle.jdbc.driver.T4CConnection@57fce8b
+2026-05-27 17:21:16 INFO  --- [main] HikariPool-Core - Start completed.
+2026-05-27 17:21:16 WARN  --- [main] HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-27 17:21:16 INFO  --- [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-Core)']
+	Database driver: undefined/unknown
+	Database version: 19.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-27 17:21:16 INFO  --- [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-27 17:21:17 INFO  --- [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-27 17:21:17 WARN  --- [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-27 17:21:17 INFO  --- [main] Starting ProtocolHandler ["http-nio-8080"]
+2026-05-27 17:21:17 INFO  --- [main] Tomcat started on port 8080 (http) with context path '/'
+2026-05-27 17:21:17 INFO  --- [main] Started InspienDevApplication in 4.366 seconds (process running for 4.839)
+2026-05-27 17:21:18 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:21:18 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:21:18 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 129ms
+2026-05-27 17:21:28 INFO  --- [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-27 17:21:28 INFO  --- [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2026-05-27 17:21:28 INFO  --- [http-nio-8080-exec-1] Completed initialization in 1 ms
+2026-05-27 17:21:29 INFO  --- [http-nio-8080-exec-1] [START] 작업명: ORDER_SAVE | 메서드: OrderService.orderSave(..)
+2026-05-27 17:21:29 INFO  --- [http-nio-8080-exec-1] [START] 작업명: CONVERT_XML | 메서드: OrderMapper.convertXmlToEntities(..)
+2026-05-27 17:21:29 INFO  --- [http-nio-8080-exec-1] [SUCCESS] 작업명: CONVERT_XML | 소요시간: 90ms
+2026-05-27 17:21:29 INFO  --- [http-nio-8080-exec-1] [SUCCESS] 작업명: ORDER_SAVE | 소요시간: 500ms
+2026-05-27 17:21:30 INFO  --- [http-nio-8080-exec-1] [START] 작업명: SEND_FILE | 메서드: AccountFtpService.sendFile(..)
+2026-05-27 17:21:32 INFO  --- [http-nio-8080-exec-1] [SUCCESS] 작업명: SEND_FILE | 소요시간: 2354ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: E685
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 22ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: P506
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 13ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: D965
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 13ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 WARN  --- [scheduling-1] [SHIPMENT] 이미 존재하는 주문입니다. 건너뜁니다: H275
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 20ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 33ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 47ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:08 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 19ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 24ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:09 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 21ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 15ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 18ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:10 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 22ms
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 17ms
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_SAVE | 메서드: ShipmentService.saveShipment(..)
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_SAVE | 소요시간: 16ms
+2026-05-27 17:22:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 3075ms
+2026-05-27 17:23:01 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:23:01 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:23:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 11ms
+2026-05-27 17:23:51 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:23:51 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:23:51 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 17:24:41 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:24:41 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:24:41 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 12ms
+2026-05-27 17:25:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:25:31 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:25:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 12ms
+2026-05-27 17:26:21 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:26:21 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:26:21 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 11ms
+2026-05-27 17:27:11 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:27:11 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:27:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 17:28:01 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:28:01 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:28:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 13ms
+2026-05-27 17:28:51 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:28:51 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:28:51 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 11ms
+2026-05-27 17:29:41 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:29:41 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:29:41 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 20ms
+2026-05-27 17:30:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:30:31 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:30:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 17:31:21 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:31:21 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:31:21 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 11ms
+2026-05-27 17:32:11 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:32:11 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:32:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 11ms
+2026-05-27 17:33:01 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:33:01 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:33:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 14ms
+2026-05-27 17:33:51 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:33:51 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:33:51 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 11ms
+2026-05-27 17:34:41 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:34:41 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:34:41 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 17:35:31 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:35:31 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:35:31 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 17:36:21 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:36:21 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:36:21 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 12ms
+2026-05-27 17:37:11 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:37:11 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:37:11 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
+2026-05-27 17:38:01 INFO  --- [scheduling-1] [START] 작업명: SHIPMENT_BATCH | 메서드: ShipmentScheduler.executeShipmentBatch()
+2026-05-27 17:38:01 INFO  --- [scheduling-1] 미전송 주문 대상이 없습니다.
+2026-05-27 17:38:01 INFO  --- [scheduling-1] [SUCCESS] 작업명: SHIPMENT_BATCH | 소요시간: 10ms
