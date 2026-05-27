@@ -2,6 +2,7 @@ package com.eai.inspiendev.service;
 
 import com.eai.inspiendev.domain.Order;
 import com.eai.inspiendev.domain.Shipment;
+import com.eai.inspiendev.global.log.MonitoringLog;
 import com.eai.inspiendev.repository.ShipmentRepository;
 import com.eai.inspiendev.repository.OrderRepository;
 import jakarta.persistence.EntityManager;
@@ -20,6 +21,7 @@ public class ShipmentService {
     private final EntityManager em;
 
     @Transactional
+    @MonitoringLog("SHIPMENT_SAVE")
     public void saveShipment(Order order) {
 
         em.flush();

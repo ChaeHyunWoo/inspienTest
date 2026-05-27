@@ -17,6 +17,7 @@ public class OrderMapper {
     /**
      * [메인 진입점] XML을 분리 파싱한 후, USER_ID 기준으로 논리적 매칭을 수행
      */
+    @MonitoringLog("CONVERT_XML")
     public List<Order> convertXmlToEntities(String xmlPayload, String applicantKey) throws Exception {
         if (xmlPayload == null || xmlPayload.trim().isEmpty()) {
             return new ArrayList<>();
@@ -62,6 +63,7 @@ public class OrderMapper {
     /**
      * XML Payload에서 모든 <HEADER> 태그만 추출하여 독립된 리스트로 파싱
      */
+    @MonitoringLog("EXTRACT_HEADERS")
     private List<HeaderXml> extractHeaders(String xmlPayload) throws Exception {
         StringBuilder sb = new StringBuilder("<ORDERS>");
         Matcher matcher = Pattern.compile("<HEADER>.*?</HEADER>", Pattern.DOTALL).matcher(xmlPayload);
@@ -77,6 +79,7 @@ public class OrderMapper {
     /**
      * XML Payload에서 모든 <ITEM> 태그만 추출하여 독립된 리스트로 파싱
      */
+    @MonitoringLog("EXTRACT_ITEMS")
     private List<ItemXml> extractItems(String xmlPayload) throws Exception {
         StringBuilder sb = new StringBuilder("<ORDERS>");
         Matcher matcher = Pattern.compile("<ITEM>.*?</ITEM>", Pattern.DOTALL).matcher(xmlPayload);
@@ -92,6 +95,7 @@ public class OrderMapper {
     /**
      * FTP 전송용 플랫 파일 변환
      */
+    @MonitoringLog("CONVERT_FTP_FORMAT")
     public String convertEntitiesToFtpFormat(List<Order> entities) {
         StringBuilder sb = new StringBuilder();
         for (Order entity : entities) {

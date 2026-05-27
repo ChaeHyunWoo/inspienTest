@@ -25,6 +25,7 @@ public class OrderService {
      * 시나리오 1: 데이터 정제 및 쇼핑몰 DB 적재
      */
     @Transactional
+    @MonitoringLog("ORDER_SAVE")
     public List<Order> orderSave(String xmlPayload) throws Exception {
 
         // 1. XML 데이터 검증

@@ -1,6 +1,7 @@
 package com.eai.inspiendev.service;
 
 import com.eai.inspiendev.domain.Order;
+import com.eai.inspiendev.global.log.MonitoringLog;
 import com.eai.inspiendev.util.OrderMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -44,6 +45,7 @@ public class AccountFtpService {
     @Value("${eai.ftp.fileName}")
     private String participantName;
 
+    @MonitoringLog("SEND_FILE")
     public void sendFile(List<Order> xmlPayload) throws Exception {
 
         String fileContent = orderMapper.convertEntitiesToFtpFormat(xmlPayload);
@@ -54,6 +56,7 @@ public class AccountFtpService {
         sendToFtp(fileName, fileContent);
     }
 
+    @MonitoringLog("SEND_TO_FTP")
     private void sendToFtp(String fileName, String content) throws Exception {
         // TimeOut Setting
         FTPClient ftpClient = new FTPClient();
