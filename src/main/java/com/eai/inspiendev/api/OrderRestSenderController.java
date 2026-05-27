@@ -20,7 +20,7 @@ import java.util.List;
 public class OrderRestSenderController {
 
     private final OrderService orderService;
-    //private final AccountFtpService accountFtpService;
+    private final AccountFtpService accountFtpService;
 
     /**
      * 시나리오 1: 실시간 주문 접수 API 진입점
@@ -35,7 +35,7 @@ public class OrderRestSenderController {
 
         try {
             List<Order> orderList = orderService.orderSave(xmlPayload);
-            //accountFtpService.sendFile(orderList);
+            accountFtpService.sendFile(orderList);
             return ResponseEntity.ok("{\"status\": \"SUCCESS\", \"code\": \"200\", \"message\": \"정상 처리 완료\"}");
 
         } catch (IllegalArgumentException e) {
